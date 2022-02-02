@@ -1,0 +1,69 @@
+<div class="header">
+  <div class="logo">
+    <svg id="Layer_1" class="novi-navbar__logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="116"
+         height="50" viewBox="0 0 140 52.6">
+      <g id="Laag_2" data-name="Laag 2">
+        <g id="Laag_1-2" data-name="Laag 1-2">
+          <g id="Laag_2-2" data-name="Laag 2-2">
+            <g id="Laag_1-2-2" data-name="Laag 1-2-2">
+              <g id="Laag_2-2-2" data-name="Laag 2-2-2">
+                <circle class="cls-1" cx="26.3" cy="26.3" r="26.3"></circle>
+                <path class="cls-2"
+                      d="M534.87,197.27h0a4,4,0,0,1,1.59,5.42L524,225.6a4,4,0,0,1-5.41,1.59h0a4,4,0,0,1-1.59-5.42h0l12.48-22.9a4,4,0,0,1,5.43-1.61Z"
+                      transform="translate(-494.31 -185.72)"></path>
+                <path class="cls-2"
+                      d="M509,201.67c-1.71,1.05-2.68,2.84-1.8,4.69l9.49,19.07a4,4,0,0,0,5.34,1.86h0A4,4,0,0,0,523.9,222l-9.1-18.85"
+                      transform="translate(-494.31 -185.72)"></path>
+                <path class="cls-2"
+                      d="M508.5,214.3l-2.3,3.62a4.55,4.55,0,0,1-5.38,1.54,3.83,3.83,0,0,1-1.78-1.23,1.84,1.84,0,0,1-.05-2.1l.7-1.11,2.85-4.39,4.9-7.59a4.56,4.56,0,0,1,5.37-1.54,3.86,3.86,0,0,1,1.8,1.23,1.84,1.84,0,0,1,0,2.1l-.75,1.11Z"
+                      transform="translate(-494.31 -185.72)"></path>
+                <circle class="cls-2" cx="42.55" cy="30.7" r="4.09"></circle>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="menuBar">
+    <div *ngIf="false; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+      <ul>
+        <li (click)="klik('inloggen')">
+        <span>
+          <a>Inloggen</a>
+        </span>
+        </li>
+        <li (click)="klik('registreren')">
+         <span>
+          <a>Registreren</a>
+        </span>
+        </li>
+      </ul>
+    </ng-template>
+    <ng-template #elseBlock>
+      <ul>
+        <li (click)="klik('pools')">
+        <span>
+          <a>Home</a>
+        </span>
+        </li>
+        <li>
+         <span>
+          <a>pools</a>
+        </span>
+        </li>
+        <li>
+         <span>
+          <a>bets</a>
+        </span>
+        </li>
+        <li>
+         <span>
+          <a>Account</a>
+        </span>
+        </li>
+      </ul>
+    </ng-template>
+  </div>
+</div>
