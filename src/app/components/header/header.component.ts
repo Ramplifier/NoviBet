@@ -7,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  inlogwaarde: boolean = false;
+
   constructor() {
   }
 
@@ -15,5 +17,11 @@ export class HeaderComponent implements OnInit {
 
   klik(loc: string) {
     console.log(loc);
+  }
+
+  inlog() {
+
+    this.inlogwaarde = !this.inlogwaarde;
+    console.log(this.inlogwaarde)
   }
 }

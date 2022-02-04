@@ -1,5 +1,5 @@
 <div class="header">
-  <div class="logo">
+  <div class="logo" (click)="inlog()">
     <svg id="Layer_1" class="novi-navbar__logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="116"
          height="50" viewBox="0 0 140 52.6">
       <g id="Laag_2" data-name="Laag 2">
@@ -26,17 +26,17 @@
     </svg>
   </div>
   <div class="menuBar">
-    <div *ngIf="false; then thenBlock else elseBlock"></div>
+    <div *ngIf="this.inlogwaarde; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
       <ul>
-        <li (click)="klik('inloggen')">
+        <li (click)="klik('inlog')">
         <span>
-          <a>Inloggen</a>
+          <a routerLink="inlog">Inloggen</a>
         </span>
         </li>
-        <li (click)="klik('registreren')">
+        <li (click)="klik('registratie')">
          <span>
-          <a>Registreren</a>
+          <a routerLink="registratie">Registreren</a>
         </span>
         </li>
       </ul>
@@ -45,22 +45,12 @@
       <ul>
         <li (click)="klik('pools')">
         <span>
-          <a>Home</a>
+          <a routerLink="home">Home</a>
         </span>
         </li>
         <li>
          <span>
-          <a>pools</a>
-        </span>
-        </li>
-        <li>
-         <span>
-          <a>bets</a>
-        </span>
-        </li>
-        <li>
-         <span>
-          <a>Account</a>
+          <a routerLink="account">Account</a>
         </span>
         </li>
       </ul>

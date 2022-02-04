@@ -13,6 +13,10 @@ html, body {
   background-color: #fdf3ee;
 }
 
+a {
+  color: #0d0d0d;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
